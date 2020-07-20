@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.itcast.travel.dao.RouteDao">
+    <select id="findByPage" resultType="cn.itcast.travel.domain.Route">
+    </select>
+    <select id="findTotalCount" resultType="int"></select>
+    <select id="findOne" resultType="cn.itcast.travel.domain.Route">
+        select * from tab_route where rid = #{rid}
+    </select>
+</mapper>
